@@ -1,0 +1,40 @@
+.status-bar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 7%;
+  top: 0px;
+  justify-content: center;
+}
+.status-bar__time {
+  width: 10%;
+  color: gray;
+
+  display: flex;
+  justify-content: center;
+}
+.status-bar__icon {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+.status-bar__black-bar {
+  width: 80%;
+  height: 30px;
+  background-color: #8d9ca4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.status-bar__black-bar__gay {
+  width: 8%;
+  height: 20%;
+  background-color: gray;
+  border-radius: 10px;
+}
+.status-bar__icon i {
+  margin: 1px 2px;
+}

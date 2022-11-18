@@ -1,0 +1,158 @@
+.screen-color-chat {
+  background-color: #f4f3ef;
+}
+#chat-screen {
+  background-color: #f4f3ef;
+  height: 500vh;
+}
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  top: 10px;
+  background-color: #f4f3ef;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.3s linear;
+}
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.message-row {
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+}
+.message-row > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 8px;
+}
+.message__author {
+  margin-bottom: 8px;
+  display: block;
+}
+.message__bubble-img {
+  height: 200px;
+  width: 200px;
+}
+.message__bubble {
+  background-color: #92a4b2;
+  padding: 8px 15px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #f4f3ef;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__author,
+.message__time {
+  opacity: 0.8;
+  font-size: 14px;
+}
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__bubble {
+  background-color: #92a4b2;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+  color: #f4f3ef;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.replay {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #c3cace;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.replay .replay__colum:first-child {
+  width: 10%;
+}
+.replay .replay__colum:last-child {
+  width: 90%;
+  position: relative;
+}
+.replay input {
+  padding: 11px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.replay__colum:last-child > i,
+.replay__colum:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+.replay__colum:last-child > i {
+  right: 40px;
+  top: 10px;
+}
+.replay__colum button {
+  background-color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.replay__colum button:focus,
+.replay__colum button:active {
+  outline: none;
+}
+.replay i {
+  opacity: 0.5;
+}
+.replay__colum button i {
+  opacity: 1;
+}
+
+.replay:focus-within .replay__colum:first-child,
+.replay:focus-within .fa-face-smile,
+.replay:focus-within button {
+  opacity: 0;
+}
+
+.replay:focus-within input {
+  width: 98vw;
+  transform: translateX(-13%);
+}

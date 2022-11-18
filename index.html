@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body class="screen-color">
+    <div class="status-bar">
+      <div class="status-bar__time">02:37</div>
+      <div class="status-bar__black-bar">
+        <div class="status-bar__black-bar__gay"></div>
+      </div>
+      <div class="status-bar__icon">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-half"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Music Box</h1>
+      <p class="welcome-header__text">
+        If you have a Music Box Account, log in with your email or phone number
+      </p>
+    </header>
+
+    <form action="subscribe.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Music Box Account or Password</a>
+    </form>
+    <div id="no-mobile">
+      <div class="square_div">
+        <p class="square square_move_1"></p>
+        <p class="square square_move_2"></p>
+        <p class="square square_move_3"></p>
+        <p class="square square_move_4"></p>
+        <p class="square square_move_5"></p>
+      </div>
+      <div class="no-mobile-title">The screen size is too big.</div>
+      <div class="no-mobile-title">Reduce the width to 800 or less.</div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/12ae2597f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

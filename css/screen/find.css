@@ -1,0 +1,148 @@
+.recommended-friends {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 25px 0px;
+  margin: 25px 0px;
+}
+.recommended-friends__tisle {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.recommended-friends span {
+  margin: 100px 0;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+.open-chat__header span {
+  opacity: 0.6;
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.open-post__hashtag {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.open-post__members-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.open-post__members-status {
+  color: #92a4b2;
+}
+.open-post__photo {
+  position: relative;
+}
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+.open-chat-twoline {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+@keyframes hearthBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: #92a4b2;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: hearthBeat 1s linear infinite;
+}
+.find__music_box {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.find__music_box__img {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 8px 1px #434952;
+}
+.find__muisc__Box {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+.find__muisc__Box__title {
+  margin-bottom: 10px;
+  color: #434952;
+  font-weight: 600;
+}
+.find__music-box__h4 {
+  color: #434952;
+  font-size: 10px;
+}
+.find__music_box__ {
+  display: flex;
+}
