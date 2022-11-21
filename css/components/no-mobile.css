@@ -11,12 +11,8 @@
   top: 0;
   flex-direction: column;
 }
-@media screen and (max-width: 800px) {
-  #no-mobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 400px) {
+
+@media screen and (min-width: 800px) {
   #no-mobile {
     display: none;
   }
