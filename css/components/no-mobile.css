@@ -16,6 +16,11 @@
     display: none;
   }
 }
+@media screen and (min-width: 400px) {
+  #no-mobile {
+    display: none;
+  }
+}
 
 @keyframes ani_square_move_1 {
   0% {
